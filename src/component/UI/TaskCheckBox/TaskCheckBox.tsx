@@ -3,14 +3,14 @@ import classes from "./TaskCheckBox.module.css"
 
 type TaskCheckBoxProps = {
     checked: boolean,
-    onChange?: () => void,
+    onClick?: () => void,
 };
 
 const TaskCheckBox = (props:TaskCheckBoxProps) => {
     return (
         <div className={classes.TaskCheckBox}>
-            <input type="checkbox" checked={props.checked} onChange={props.onChange} />
-            <span className={classes.checkmark}></span>
+            <input type="checkbox" />
+            <span className={classes.checkmark} onClick={props.onClick}></span>
         </div>
     )
 }

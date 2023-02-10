@@ -4,6 +4,7 @@
     color: #666666;
     border: none;
     width: 100%;
+    padding: 0px 5px;
 }
 
 .AddInput:focus {

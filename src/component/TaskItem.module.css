@@ -34,7 +34,7 @@
     background-color: #E6E6E6;
   }
   
-  .TaskCheckBox input:checked ~ .checkmark {
+  .TaskCheckBox input.checked ~ .checkmark {
     background-color: #11A9EC;
   }
   
@@ -44,7 +44,7 @@
     display: none;
   }
   
-  .TaskCheckBox input:checked ~ .checkmark:after {
+  .TaskCheckBox input.checked ~ .checkmark:after {
     display: block;
   }
   

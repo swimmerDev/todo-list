@@ -7,17 +7,24 @@
     border: none;
     font-size: 18px;
     display: none;
+    position: relative;
+    left: 50%;
 }
 
-.AddButton.focus {
+.AddButton.active {
     display: block;
 }
+.AddButton.active:hover {
+    display: block;
+    color: #34c2fa;
+}
 
-.AddButton.focus:disabled {
-    color: #E6E6E6
+.AddButton.active:disabled {
+    color: #E6E6E6;
+    cursor: default;
     
 }
 
-.AddButton.focus:hover {
-    color: #34c2fa
+.AddButton.active:disabled:hover {
+    color: #E6E6E6;
 }

@@ -1,29 +1,31 @@
 .PlusIcon {
     border-radius: 50%;
-    width: 2vh;
-    height: 2vh;
+    width: 22px;
+    height: 22px;
     background-color: rgba(0, 0, 0, 0);
     position: relative;
   }
 .PlusIcon::after {
+    border-radius: 18%;
     content: " ";
     position: absolute;
     display: block;
     background-color: #11A9EC;
-    height: 16%;
-    margin-top: -8%;
+    height: 4px;
+    margin-top: -2px;
     top: 50%;
     left: 0;
     right: 0;
     z-index: 9;
   }
 .PlusIcon::before {
+    border-radius: 18%;
     content: " ";
     position: absolute;
     display: block;
     background-color: #11A9EC;
-    width: 16%;
-    margin-left: -8%;
+    width: 4px;
+    margin-left: -2px;
     left: 50%;
     top: 0;
     bottom: 0;
