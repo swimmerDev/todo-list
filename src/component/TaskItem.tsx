@@ -1,5 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
-import TaskCheckBox from "./UI/TaskCheckBox/TaskCheckBox";
+import React, { useEffect, useState } from "react";
 import AddSep from "./UI/AddSep/AddSep";
 import TaskDate from "./UI/TaskDate/TaskDate";
 import { DataTask } from "../types/types";
