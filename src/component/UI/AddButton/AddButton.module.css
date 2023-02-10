@@ -1,0 +1,23 @@
+.AddButton {
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    color: #0EADEB;
+    font-family: SF Pro Text Bold;
+    border: none;
+    font-size: 18px;
+    display: none;
+}
+
+.AddButton.focus {
+    display: block;
+}
+
+.AddButton.focus:disabled {
+    color: #E6E6E6
+    
+}
+
+.AddButton.focus:hover {
+    color: #34c2fa
+}

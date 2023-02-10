@@ -1,0 +1,61 @@
+.TaskCheckBox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    /* font-size: 22px; */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .TaskCheckBox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2vh;
+    width: 2vh;
+    background-color: white;
+    border: 1px solid #11A9EC;
+    border-radius: 50%;
+  }
+  
+  .TaskCheckBox:hover input ~ .checkmark {
+    background-color: #E6E6E6;
+  }
+  
+  .TaskCheckBox input:checked ~ .checkmark {
+    background-color: #11A9EC;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .TaskCheckBox input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .TaskCheckBox .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid #F7F7F7;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }

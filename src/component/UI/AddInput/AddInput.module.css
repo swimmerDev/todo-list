@@ -1,0 +1,15 @@
+.AddInput {
+    font-family: "SF Pro Text Regular";
+    font-size: 18px;
+    color: #666666;
+    border: none;
+    width: 100%;
+}
+
+.AddInput:focus {
+    outline: none;
+}
+
+.AddInput::placeholder {
+    color: #cccccc;
+}
