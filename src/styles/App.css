@@ -55,6 +55,11 @@ body {
   color: #666666;
   font-family: "SF Pro Text Regular";
   margin: 0 2%;
+  font-style: normal;
+}
+
+.TaskItemContent label.select {
+  font-style: inherit;
 }
 
 @font-face {

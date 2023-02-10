@@ -45,7 +45,7 @@ const TaskItem = ({task}:TaskItemsProps) => {
                         }
                     }}></span>
                 </div>
-                <label> {task.description} </label>
+                <label className={theme}> {task.description} </label>
                 { task.dueDate && <TaskDate time={Date.now()} lang={"en-US"} options={optionsDate} /> }
             </div>
             <AddSep />

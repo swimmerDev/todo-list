@@ -41,7 +41,7 @@ const AddLine = () => {
                         onChange={(e) => setInput(e.target.value)}
                         onFocus={() => setFocus(true)}
                         onBlur={() => setFocus(false)}
-                        onKeyDown={(e:React.KeyboardEvent<Element>) => e.key === "Enter" && downEnter()}
+                        onKeyDown={(e:React.KeyboardEvent<Element>) => e.key === "Enter" && input && downEnter()}
                         />
                 </div>
                 <AddButton disabled={disabled} visible={visible} onClick={addToList}> Add </AddButton> 
