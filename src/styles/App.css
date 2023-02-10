@@ -5,7 +5,6 @@
 }
 body {
     background-color: #11a9ec;
-    margin: 4vh 0vh 8vh 0vh;
 }
 
 #root {
@@ -16,6 +15,7 @@ body {
 
 .App {
     width: 70vh;
+    margin: 4vh 0vh 8vh 0vh;
 }
 
 .taskBG {
