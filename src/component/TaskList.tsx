@@ -26,7 +26,7 @@ const TaskList = () => {
         }, [tasks]);
 
     return (
-        <div>
+        <div className="ListTasksContent">
             {sortedPosts.map((task:DataTask) => {
                 return (
                     <div key={task.id}>

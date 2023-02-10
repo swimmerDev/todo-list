@@ -23,14 +23,23 @@ body {
     width: 70vh;
     background-color: white;
     min-width: 600px;
+    min-height: 700px;
     border-radius: 3px;
     box-shadow: 0 15px 15px 0px rgba(0,0,0,0.1);
     padding: 3vh 2vh;
-    overflow: hidden;
-    overflow-y: scroll;
 }
 
-.taskBG::-webkit-scrollbar {
+.ListTasksContent {
+  height: 85%;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.AddLineInput {
+  min-width: 90%;
+  max-width: 100%;
+}
+
+.ListTasksContent::-webkit-scrollbar {
     width: 0px;
 }
 

@@ -7,8 +7,6 @@
     border: none;
     font-size: 18px;
     display: none;
-    position: relative;
-    left: 50%;
 }
 
 .AddButton.active {
