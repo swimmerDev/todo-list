@@ -1,32 +1,52 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    background-color: #11a9ec;
+  background-color: #11a9ec;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 #root {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .App {
-    width: 70vh;
-    margin: 4vh 0vh 8vh 0vh;
+  width: 70vh;
+  margin: 4vh 0vh 8vh 0vh;
+}
+
+.TasksTitle {
+  font-size: 36px;
+  color: #11a9ec;
+  margin-bottom: 3vh;
+  font-weight: 600;
 }
 
 .taskBG {
-    height: 80vh;
-    width: 70vh;
-    background-color: white;
-    min-width: 600px;
-    min-height: 700px;
-    border-radius: 3px;
-    box-shadow: 0 15px 15px 0px rgba(0,0,0,0.1);
-    padding: 3vh 2vh;
+  height: 80vh;
+  width: 70vh;
+  background-color: white;
+  min-width: 600px;
+  min-height: 700px;
+  border-radius: 3px;
+  box-shadow: 0 15px 15px 0px rgba(0, 0, 0, 0.1);
+  padding: 3vh 2vh;
+}
+
+.Separator {
+  width: 100%;
+  height: 1px;
+  background-color: #e6e6e6;
+  margin: 2.1% 0;
+}
+
+.Separator.selectsActive {
+  background-color: #11a9ec;
 }
 
 .ListTasksContent {
@@ -40,11 +60,11 @@ body {
 }
 
 .ListTasksContent::-webkit-scrollbar {
-    width: 2px;
+  width: 2px;
 }
 
 .ListTasksContent::-webkit-scrollbar-track {
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
 }
 
 .ListTasksContent::-webkit-scrollbar-thumb {
@@ -52,15 +72,15 @@ body {
 }
 
 .AddLineConten {
-    width: 100%;
-    display: flex;
+  width: 100%;
+  display: flex;
 }
 
 .TaskItemContent {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    padding-right: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-right: 5px;
 }
 
 .TaskItemContent label {
@@ -71,7 +91,6 @@ body {
   text-overflow: ellipsis;
   font-size: 18px;
   color: #666666;
-  font-family: "SF Pro Text Regular";
   margin: 0 2%;
   font-style: normal;
 }
@@ -80,47 +99,44 @@ body {
   font-style: inherit;
 }
 
-@font-face {
-    font-family: "SF Pro Text Semibold";
-    src: url("//db.onlinewebfonts.com/t/d6243b42d786410a86f0bafee83d503a.eot");
-    src: url("//db.onlinewebfonts.com/t/d6243b42d786410a86f0bafee83d503a.eot?#iefix")
-        format("embedded-opentype"),
-      url("//db.onlinewebfonts.com/t/d6243b42d786410a86f0bafee83d503a.woff2")
-        format("woff2"),
-      url("//db.onlinewebfonts.com/t/d6243b42d786410a86f0bafee83d503a.woff")
-        format("woff"),
-      url("//db.onlinewebfonts.com/t/d6243b42d786410a86f0bafee83d503a.ttf")
-        format("truetype"),
-      url("//db.onlinewebfonts.com/t/d6243b42d786410a86f0bafee83d503a.svg#SF Pro Text")
-        format("svg");
-  }
+.MainTitle {
+  font-size: 36px;
+  color: #f7f7f7;
+  margin-left: 2vh;
+  margin-bottom: 1vh;
+  font-weight: 600;
+}
 
-@font-face {
-    font-family: "SF Pro Text Regular";
-    src: url("//db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.eot");
-    src: url("//db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.eot?#iefix")
-        format("embedded-opentype"),
-      url("//db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.woff2")
-        format("woff2"),
-      url("//db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.woff")
-        format("woff"),
-      url("//db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.ttf")
-        format("truetype"),
-      url("//db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.svg#SF Pro Text")
-        format("svg");
-  }
-
-@font-face {
-    font-family: "SF Pro Text Bold";
-    src: url("//db.onlinewebfonts.com/t/28adc6c6fd652123c3e173389a8be17f.eot");
-    src: url("//db.onlinewebfonts.com/t/28adc6c6fd652123c3e173389a8be17f.eot?#iefix")
-        format("embedded-opentype"),
-      url("//db.onlinewebfonts.com/t/28adc6c6fd652123c3e173389a8be17f.woff2")
-        format("woff2"),
-      url("//db.onlinewebfonts.com/t/28adc6c6fd652123c3e173389a8be17f.woff")
-        format("woff"),
-      url("//db.onlinewebfonts.com/t/28adc6c6fd652123c3e173389a8be17f.ttf")
-        format("truetype"),
-      url("//db.onlinewebfonts.com/t/28adc6c6fd652123c3e173389a8be17f.svg#SF Pro Text")
-        format("svg");
-  }
+.PlusIcon {
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  background-color: rgba(0, 0, 0, 0);
+  position: relative;
+}
+.PlusIcon::after {
+  border-radius: 10px;
+  content: " ";
+  position: absolute;
+  display: block;
+  background-color: #11a9ec;
+  height: 4px;
+  margin-top: -2px;
+  top: 50%;
+  left: 0;
+  right: 0;
+  z-index: 9;
+}
+.PlusIcon::before {
+  border-radius: 10px;
+  content: " ";
+  position: absolute;
+  display: block;
+  background-color: #11a9ec;
+  width: 4px;
+  margin-left: -2px;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  z-index: 9;
+}

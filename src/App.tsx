@@ -1,23 +1,21 @@
-import React from 'react';
+import React from "react";
 import "./styles/App.css";
-import MainTitle from './component/UI/MainTitle/MainTitle';
-import TaskTitle from './component/UI/TaskTitile/TaskTitle';
-import AddLine from './component/AddLine';
-import { TasksContextProvider } from './context/TaskContext';
-import TaskList from './component/TaskList';
+import AddLine from "./component/AddLine";
+import { TasksContextProvider } from "./context/TaskContext";
+import TaskList from "./component/TaskList";
 
 function App() {
   return (
-    <div className="App">
-      <MainTitle > Task Manager </MainTitle>
-      <div className='taskBG'>
-        <TaskTitle>Work</TaskTitle>
-        <TasksContextProvider>
+    <TasksContextProvider>
+      <div className="App">
+        <h1 className="MainTitle">Task Manager</h1>
+        <div className="taskBG">
+          <h1 className="TasksTitle">Work</h1>
           <AddLine />
           <TaskList />
-        </TasksContextProvider>
+        </div>
       </div>
-    </div>
+    </TasksContextProvider>
   );
 }
 

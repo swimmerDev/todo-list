@@ -1,6 +1,5 @@
 .TaskData {
-    font-family: "SF Pro Text Regular";
-    font-size: 12px;
-    color: #CDCDCD;
-    white-space: nowrap;
+  font-size: 12px;
+  color: #cdcdcd;
+  white-space: nowrap;
 }

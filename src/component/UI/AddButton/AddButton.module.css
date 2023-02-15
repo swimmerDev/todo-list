@@ -1,28 +1,28 @@
 .AddButton {
-    text-align: center;
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0);
-    color: #0EADEB;
-    font-family: SF Pro Text Bold;
-    border: none;
-    font-size: 18px;
-    display: none;
+  text-align: center;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  color: #0eadeb;
+  border: none;
+  font-size: 18px;
+  display: none;
+  font-weight: 900;
 }
 
 .AddButton.active {
-    display: block;
+  display: block;
 }
+
 .AddButton.active:hover {
-    display: block;
-    color: #34c2fa;
+  display: block;
+  color: #34c2fa;
 }
 
 .AddButton.active:disabled {
-    color: #E6E6E6;
-    cursor: default;
-    
+  color: #e6e6e6;
+  cursor: default;
 }
 
 .AddButton.active:disabled:hover {
-    color: #E6E6E6;
+  color: #e6e6e6;
 }
